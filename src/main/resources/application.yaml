@@ -1,1 +1,7 @@
-
+server:
+  port: 9090
+spring:
+  security:
+    user:
+      name: kamar
+      password: kamar
