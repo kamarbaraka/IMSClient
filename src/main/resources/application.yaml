@@ -1,7 +1,12 @@
+
 server:
   port: 9090
 spring:
-  security:
-    user:
-      name: kamar
-      password: kamar
+  threads:
+    virtual:
+      enabled: true
+  config:
+    import: optional:credentials.yaml
+  datasource:
+    url: jdbc:mysql://localhost:3306/
+
